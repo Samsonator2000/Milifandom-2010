@@ -3,7 +3,7 @@ body {background-color: navyblue; font-family: Arial}
 
 h1, p {color: whitesmoke;}
 
-h2 {color: powderblue; }
+h3 {color: powderblue; }
 
-
+h1, h3{ display:inline; vertical-align:middle;}
 
