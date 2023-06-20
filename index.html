@@ -9,7 +9,39 @@
 <body>
     <h1>MILIFANDOM 2010</h1>
     <h3>(The second realm)</h3>
-
+    <ul>
+        <li><button onclick = "international()">International constitution </button></li>
+        <button onclick = "nationalOne()">National Constitution 1</button></li>
+        <button onclick = "nationalTwo()">National Constitution 2</button></li>
+     
+        <button onclick = "nationalThree()">National Constitution 3</button></li>
+     
+        <button onclick = "nationalFour()">National Constitution 4</button></li>
+    </ul>
+        <p id = "Constitutions">This is the initial text of Para1.</p>
+        <script>
+           var para = document.getElementById("Constitutions");
+           function international() {
+              para.innerText = "international ";
+           
+           }
+           function nationalOne() {
+              para.innerText = "one";
+           }
+     
+           function nationalTwo() {
+              para.innerText = "two ";
+           }
+     
+           function nationalThree() {
+              para.innerText = "three";
+           }
+     
+           function nationalFour() {
+              para.innerText = "four";
+           }
+     
+        </script>
 
 
 </body>
