@@ -33,6 +33,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 0.4s
 }
 
 .active {
@@ -98,8 +99,8 @@ body {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #333;
+  color: #f2f2f2;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -111,12 +112,12 @@ body {
 }
 
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #1b1b1b;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #444;
+  color: #f2f2f2;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -128,7 +129,7 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #2b98ab;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
