@@ -4,42 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="styles.css">
+ 
 </head>
 <body>
     <h1>MILIFANDOM 2010</h1>
     <h3>(The second realm)</h3><br>
     <ul>
-        <li><button class="button-conBar" onclick = "international()">International constitution </button></li>
-        <li><button class="button-conBar" onclick = "nationalOne()">National Constitution 1</button></li>
-        <li><button class="button-conBar" onclick = "nationalTwo()">National Constitution 2</button></li>
-        <li><button class="button-conBar" onclick = "nationalThree()">National Constitution 3</button></li>
-        <li><button class="button-conBar" onclick = "nationalFour()">National Constitution 4</button></li>
+        <li><button class="button-conBar" id = "int" onclick = "international()">International constitution </button></li>
+        <li><button class="button-conBar" id = "con1" onclick = "nationalOne()">National Constitution 1</button></li>
+        <li><button class="button-conBar" id = "con2" onclick = "nationalTwo()">National Constitution 2</button></li>
+        <li><button class="button-conBar" id = "con3" onclick = "nationalThree()">National Constitution 3</button></li>
+        <li><button class="button-conBar" id = "con4" onclick = "nationalFour()">National Constitution 4</button></li>
     </ul>
-        <p id = "Constitutions">This is the initial text of Para1.</p>
-        <script>
-           var para = document.getElementById("Constitutions");
-           function international() {
-              para.innerText = "international ";
-           
-           }
-           function nationalOne() {
-              para.innerText = "one";
-           }
-     
-           function nationalTwo() {
-              para.innerText = "two ";
-           }
-     
-           function nationalThree() {
-              para.innerText = "three";
-           }
-     
-           function nationalFour() {
-              para.innerText = "four";
-           }
-     
-        </script>
+      <p id = "Constitutions">This is the initial text of Para1.</p>
+      <script>
+         var para = document.getElementById("Constitutions");
+         
+         function international() {
+         para.innerText = "international ";
+         document.getElementById("int").className = "button-selected";
+         document.getElementById("con1").className = "button-conBar";
+         document.getElementById("con2").className = "button-conBar";
+         document.getElementById("con3").className = "button-conBar";
+         document.getElementById("con4").className = "button-conBar";
+         
+         }
+         function nationalOne() {
+         para.innerText = "one";
+         document.getElementById("int").className = "button-conBar";
+         document.getElementById("con1").className = "button-selected";
+         document.getElementById("con2").className = "button-conBar";
+         document.getElementById("con3").className = "button-conBar";
+         document.getElementById("con4").className = "button-conBar";
+
+         }
+   
+         function nationalTwo() {
+         para.innerText = "two ";
+         document.getElementById("int").className = "button-conBar";
+         document.getElementById("con1").className = "button-conBar";
+         document.getElementById("con2").className = "button-selected";
+         document.getElementById("con3").className = "button-conBar";
+         document.getElementById("con4").className = "button-conBar";
+         }
+   
+         function nationalThree() {
+         para.innerText = "three";
+         document.getElementById("int").className = "button-conBar";
+         document.getElementById("con1").className = "button-conBar";
+         document.getElementById("con2").className = "button-conBar";
+         document.getElementById("con3").className = "button-selected";
+         document.getElementById("con4").className = "button-conBar";
+         }
+   
+         function nationalFour() {
+         para.innerText = "four";
+         document.getElementById("int").className = "button-conBar";
+         document.getElementById("con1").className = "button-conBar";
+         document.getElementById("con2").className = "button-conBar";
+         document.getElementById("con3").className = "button-conBar";
+         document.getElementById("con4").className = "button-selected";
+         }
+   
+      </script>
 
 
 </body>
