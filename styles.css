@@ -36,7 +36,7 @@ li .button:hover {
 
 
 /* CSS */
-.button{
+.button-conBar{
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 8px;
   border-style: none;
@@ -57,13 +57,13 @@ li .button:hover {
   touch-action: manipulation;
 }
 
-.button:hover {
+.button-conBar:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
   transition-duration: .1s;
 }
 
 @media (min-width: 768px) {
-  .button {
+  .button-conBar {
     padding: 0 2.6rem;
   }
 }
