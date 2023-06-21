@@ -5,7 +5,7 @@ h1, p {color: whitesmoke;}
 
 h3 {color: powderblue; }
 
-h1, h3{ display:block; vertical-align: centre;}
+h1, h3{ vertical-align: centre;}
 
 
 ul {
