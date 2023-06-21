@@ -130,6 +130,7 @@ body {
 .panel {
   padding: 0 18px;
   background-color: #2b98ab;
+  color:#333;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
