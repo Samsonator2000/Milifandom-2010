@@ -21,17 +21,22 @@
   </div>
   
 <div class="row">
-  <div class="leftcolumn">
-  	<div class="pageTitle" >
+  <div class="pageTitle" >
     <h2>The Leauge of Nations</h2>
-    </div>
+  </div>
+  <div class="leftcolumn">
+  	
     <div class="card">
       <h3>Constitution<h3>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>The Constitution is yet to be released</p>
     </div>
     <div class="card">
     	<h3>Legislation<h3>
-        <p>accordians of legislation<p>
+      <button class="accordion">Bill</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+        
     </div>
   </div>
   <div class="rightcolumn">
@@ -47,7 +52,24 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
   
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("Aactive");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 
 </body>
 </html>
