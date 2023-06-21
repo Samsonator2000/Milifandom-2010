@@ -135,6 +135,7 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
 table {
   font-family: arial;
   border-collapse: collapse;
