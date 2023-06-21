@@ -23,6 +23,7 @@ li {
 }
 
 li a{
+  font-family: Arial;
   display: block;
   color: white;
   text-align: center;
