@@ -1,148 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <style>
-    
-    
-body {background-color: navy; font-family: Arial}
-
-h1, p {color: whitesmoke;}
-
-h3 {color: powderblue; }
-
-h1, h3{ display:inline; vertical-align:middle;}
-ul, p {display:inline-block; vertical-align:top; list-style-type: none}
-
-
-
-/* CSS */
-.button-conBar{
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 0px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: centre;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 300px;
-}
-
-.button-conBar:hover {
-  background-image: linear-gradient(92.88deg, #455Ef5 9.16%, #5643CC 43.89%, #673Ff7 64.72%);
-}
-
-@media (min-width: 1000px) {
-  .button-conBar {
-    padding: 0 2.6rem;
-  }
-}
-
-.button-selected{  
-background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 0px;
-  border-style: none;
-  box-sizing: border-box;
-  color: powderblue;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: centre;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 300px;
-  font-weight: bold;
-  
-}
-
-
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>MILIFANDOM 2010</h1>
-    <h3>(The second realm)</h3><br>
-    <ul>
-        <li><button class="button-conBar" id = "int" onclick = "international()">International constitution </button></li>
-        <li><button class="button-conBar" id = "con1" onclick = "nationalOne()">National Constitution 1</button></li>
-        <li><button class="button-conBar" id = "con2" onclick = "nationalTwo()">National Constitution 2</button></li>
-        <li><button class="button-conBar" id = "con3" onclick = "nationalThree()">National Constitution 3</button></li>
-        <li><button class="button-conBar" id = "con4" onclick = "nationalFour()">National Constitution 4</button></li>
-    </ul>
-        <p id = "Constitutions">This is the initial text of Para1.</p>
-        <script>
-           var para = document.getElementById("Constitutions");
-
-           
-           function international() {
-              para.innerText = "international ";
-            
-			document.getElementById("int").className = "button-selected";
-            document.getElementById("con1").className = "button-conBar";
-            document.getElementById("con2").className = "button-conBar";
-            document.getElementById("con3").className = "button-conBar";
-            document.getElementById("con4").className = "button-conBar";
-           
-           }
-           function nationalOne() {
-              para.innerText = "one";
-			document.getElementById("int").className = "button-conBar";
-            document.getElementById("con1").className = "button-selected";
-            document.getElementById("con2").className = "button-conBar";
-            document.getElementById("con3").className = "button-conBar";
-            document.getElementById("con4").className = "button-conBar";
-
-           }
-     
-           function nationalTwo() {
-              para.innerText = "two ";
-			document.getElementById("int").className = "button-conBar";
-            document.getElementById("con1").className = "button-conBar";
-            document.getElementById("con2").className = "button-selected";
-            document.getElementById("con3").className = "button-conBar";
-            document.getElementById("con4").className = "button-conBar";
-           }
-     
-           function nationalThree() {
-              para.innerText = "three";
-			document.getElementById("int").className = "button-conBar";
-            document.getElementById("con1").className = "button-conBar";
-            document.getElementById("con2").className = "button-conBar";
-            document.getElementById("con3").className = "button-selected";
-            document.getElementById("con4").className = "button-conBar";
-           }
-     
-           function nationalFour() {
-              para.innerText = "four";
-			document.getElementById("int").className = "button-conBar";
-            document.getElementById("con1").className = "button-conBar";
-            document.getElementById("con2").className = "button-conBar";
-            document.getElementById("con3").className = "button-conBar";
-            document.getElementById("con4").className = "button-selected";
-           }
-     
-        </script>
-
+  <h1>MILIFANDOM 2010</h1>
+  <h3>(The second realm)</h3><br>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="nation1.html">Nation One</a></li>
+    <li><a href="nation1.html">Nation Two</a></li>
+    <li><a href="nation1.html">Nation Three</a></li>
+    <li><a href="nation1.html">Nation Four</a></li>
+  </ul>
+    
 
 </body>
 </html>

@@ -1,5 +1,5 @@
     
-body {background-color: navy; font-family: Arial}
+body {background-color: navy; font-family: Arial; margin:2px;}
 
 h1, p {color: whitesmoke;}
 
@@ -9,60 +9,33 @@ h1, h3{ display:inline; vertical-align:middle;}
 ul, p {display:inline-block; vertical-align:top; list-style-type: none}
 
 
-
-/* CSS */
-.button-conBar{
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 0px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: centre;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 300px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.button-conBar:hover {
-  background-image: linear-gradient(92.88deg, #455Ef5 9.16%, #455ef5 43.89%, #455ef5 64.72%);
+li {
+  float: left;
 }
 
-@media (min-width: 1000px) {
-  .button-conBar {
-    padding: 0 2.6rem;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.button-selected{  
-background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 0px;
-  border-style: none;
-  box-sizing: border-box;
-  color: powderblue;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: centre;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 300px;
-  font-weight: bold;
-  
+li a:hover:not(.active) {
+  background-color: #5a49c8;
+}
+
+.active {
+  background-color: #2b98ab;
 }
