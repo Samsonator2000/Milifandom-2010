@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
 }
+:root{
+  --grey: #333;
+  --Dgrey: #1b1b1b;
+  --white: #f2f2f2;
+}
+
 
 body {
   font-family: Arial;
   padding: 10px;
-  background: navy;
+  background: var(--back);
 }
 
 /* Header/Blog Title */
@@ -22,14 +28,14 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--grey);
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,11 +43,11 @@ body {
 }
 
 .active {
-  background-color: #2b98ab;
+  background-color: var(--accent);
 }
 
 .topnav a:hover:not(.active) {
-  background-color: #1b1b1b;
+  background-color: var(--Dgrey);
 
 }
 
@@ -56,14 +62,14 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: navy;
+  background-color: var(--back);
   padding-left: 20px;
 }
 
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: var(--white);
   padding: 20px;
   margin-top: 20px;
 }
@@ -76,10 +82,10 @@ body {
 }
 .pageTitle{
 	margin-top:0px;
-	background-color: #2b98ab;
+	background-color: var(--accent);
     padding: 20px;
     text-align: center;
-    color: #333
+    color: var(--grey)
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -99,8 +105,8 @@ body {
 }
 
 .accordion {
-  background-color: #333;
-  color: #f2f2f2;
+  background-color: var(--grey);
+  color: var(--white);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -112,12 +118,12 @@ body {
 }
 
 .accordion:hover {
-  background-color: #1b1b1b;
+  background-color: var(--Dgrey)
 }
 
 .accordion:after {
   content: '\002B';
-  color: #f2f2f2;
+  color: var(--white);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -129,8 +135,8 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: #2b98ab;
-  color:#333;
+  background-color: var(--accent);
+  color: var(--grey);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -143,11 +149,11 @@ body {
 }
 
 .card td{
-  border: 1px solid #333;
+  border: 1px solid var(--grey);
   text-align: left;
   padding: 8px;
 }
 
 .card tr:nth-child(even) {
-  background-color: #abd9e1;
+  background-color: var(--tbAccent);
 }
