@@ -19,18 +19,22 @@ body {
   text-align: left;
   background: var(--white);
 }
+
+.header h1 {
+  font-size: 50px;
+}
+
 .disclaimers {
-  padding: 30px;
+  padding: 10px;
   text-align: left;
   background: var(--grey);
+  margin-top: 20px;
 }
 .disclaimers p{
   color:var(--white);
 }
 
-.header h1 {
-  font-size: 50px;
-}
+
 
 /* Style the top navigation bar */
 .topnav {
