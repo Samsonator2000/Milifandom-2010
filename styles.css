@@ -14,7 +14,6 @@ body {
   background: var(--back);
 }
 
-/* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: left;
