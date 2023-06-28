@@ -19,12 +19,12 @@ body {
   text-align: left;
   background: var(--white);
 }
-.footer {
+.disclaimers {
   padding: 30px;
   text-align: left;
   background: var(--grey);
 }
-.footer p{
+.disclaimers p{
   color:var(--white);
 }
 
