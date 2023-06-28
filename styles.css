@@ -18,7 +18,15 @@ body {
 .header {
   padding: 30px;
   text-align: left;
-  background: white;
+  background: var(--white);
+}
+.footer {
+  padding: 30px;
+  text-align: left;
+  background: var(--grey);
+}
+.footer p{
+  color:var(--white);
 }
 
 .header h1 {
